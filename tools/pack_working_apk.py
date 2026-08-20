@@ -160,10 +160,10 @@ def build(out: Path) -> Path:
             continue
         files[n] = z.read(n)
     files["res/layout/main.xml"] = patch_layout_text(files["res/layout/main.xml"], TEXT)
-    logo = ROOT / "assets" / "logo.png"
-    if logo.exists():
-        files["assets/logo.png"] = logo.read_bytes()
-        files["assets/identity.txt"] = "Czarne Wilki Prawdy – Wszyscy Won!\n".encode()
+    files["assets/identity.txt"] = "Czarne Wilki Prawdy – Wszyscy Won!\n".encode()
+    icon = ROOT / "assets" / "icon_48.png"
+    if icon.exists():
+        files["assets/icon.png"] = icon.read_bytes()
     key, cert = keystore()
     files = sign_v1_sha1(files, key, cert)
     raw = zip_dos(files)
