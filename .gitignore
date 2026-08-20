@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.spec
+/tmp/
+.czarne_wilki_prawdy/
