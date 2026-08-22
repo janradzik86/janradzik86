@@ -1,0 +1,11 @@
+{
+  "name": "wojan-studio",
+  "version": "0.2.0",
+  "description": "Wojan Studio — platforma realizacji pomysłów (Web + Android + wspólny backend + adaptacyjny AI Project Builder)",
+  "main": "server.js",
+  "scripts": {"start": "node server.js", "test": "node --test tests/*.mjs"},
+  "engines": {"node": ">=18"},
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {"jsdom": "^29.1.1"}
+}
