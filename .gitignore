@@ -1,0 +1,28 @@
+# Zależności
+node_modules/
+
+# Dane (baza + media + artefakty) — NIE wrzucamy na Git
+data/
+
+# Toolchain Androida + buildy — duże, tylko lokalnie (to by blokowało push!)
+android-tools/
+android/.gradle/
+android/build/
+android/app/build/
+*.zip
+*.apk
+!public/wojan-studio-release.apk
+
+# Środowisko
+.env
+.env.local
+
+# Logi
+*.log
+npm-debug.log*
+
+# Systemowe
+.DS_Store
+
+# Build/katalogi robocze
+deploy/tmp/

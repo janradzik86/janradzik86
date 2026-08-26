@@ -1,0 +1,30 @@
+# ============================================================
+# WOJAN STUDIO — Render Blueprint (darmowy Web Service)
+#
+# Użycie:
+#   1. Wypchnij projekt na GitHub/GitLab.
+#   2. W Render: "New +" → "Blueprint" → wskaż repo → Render
+#      przeczyta ten plik i stworzy usługę automatycznie.
+#   Alternatywnie: "New Web Service" i wpisz komendy ręcznie
+#   (patrz deploy/RENDER.md).
+#
+# UWAGA (darmowy tier):
+#   - Aplikacja usypia po ~15 min bez ruchu (pierwsze wejście ~1 min).
+#   - Dysk jest ULOTNY: data/db.json i data/media/ resetują się przy
+#     redeploy/uśpieniu. Aplikacja sama seeduje dane demo przy starcie,
+#     więc zawsze działa; dane testowe nie są trwałe. Do produkcji
+#     podepnij zewnętrzny magazyn (patrz deploy/RENDER.md).
+# ============================================================
+services:
+  - type: web
+    name: wojan-studio
+    runtime: node
+    plan: free
+    region: frankfurt          # blisko PL; zmień wg potrzeb
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production

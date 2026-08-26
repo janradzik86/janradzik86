@@ -1,0 +1,32 @@
+# ============================================================
+# WOJAN STUDIO — uruchomienie przez Docker Compose
+#   docker compose up -d --build
+# ============================================================
+version: "3.8"
+
+services:
+  wojan-studio:
+    build: .
+    container_name: wojan-studio
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      HOST: 0.0.0.0
+      # Ścieżka bazy wewnątrz kontenera (wolumen poniżej)
+      DB_PATH: /app/data/db.json
+    volumes:
+      # Trwałe dane: baza + wgrane utwory/media + artefakty projektów
+      - wojan-data:/app/data
+    ports:
+      # Lokalnie 3000; za nginxem można wystawić tylko do sieci wewnętrznej
+      - "3000:3000"
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:3000/api/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+volumes:
+  wojan-data:
