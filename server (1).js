@@ -15,7 +15,7 @@ const path = require('path');
 const crypto = require('crypto');
 const AGENT = require('./server/agent.js');
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 10000;
 const HOST = process.env.HOST || '0.0.0.0';
 const PROD = process.env.NODE_ENV === 'production';
 const ROOT = path.join(__dirname, 'public');
