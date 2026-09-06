@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Czarne Wilki Prawdy — Wojan | Oficjalna strona zespołu</title>
+<meta name="description" content="Czarne Wilki Prawdy — zespół muzyczny Wojana. Nowe utwory, radio grające w pętli, koncerty i kontakt.">
+<link rel="canonical" href="https://czarnewilkiprawdy.pl/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Czarne Wilki Prawdy — Wojan">
+<meta property="og:description" content="Oficjalna strona zespołu. Nowe utwory, radio 24/7, koncerty.">
+<meta property="og:image" content="https://czarnewilkiprawdy.pl/assets/hero.jpg">
+<meta property="og:url" content="https://czarnewilkiprawdy.pl/">
+<meta name="theme-color" content="#0a0a0c">
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain"></div>
+
+<header class="nav">
+  <a class="brand" href="#top">
+    <img src="assets/logo.png" alt="">
+    <span>CZARNE WILKI PRAWDY</span>
+  </a>
+  <nav>
+    <a href="#muzyka">Muzyka</a>
+    <a href="#radio">Radio</a>
+    <a href="#zespol">Zespół</a>
+    <a href="#koncerty">Koncerty</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+  <button class="burger" aria-label="Menu">☰</button>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <p class="kicker">WOJAN &nbsp;•&nbsp; OFICJALNA STRONA</p>
+    <h1>CZARNE<br>WILKI<br><span>PRAWDY</span></h1>
+    <p class="lead">Muzyka, która nie kłamie. Nowe utwory prosto z watahy — słuchaj, udostępniaj, wyj razem z nami.</p>
+    <div class="cta">
+      <a class="btn primary" href="#muzyka">Posłuchaj nowości</a>
+      <button class="btn ghost" id="heroRadio">▶ Włącz radio</button>
+    </div>
+  </div>
+  <div class="scroll">przewiń ↓</div>
+</section>
+
+<section id="muzyka" class="section">
+  <div class="head">
+    <h2>MUZYKA</h2>
+    <p>Najnowsze premiery i cały katalog. Każdy nowy utwór ląduje tu automatycznie.</p>
+  </div>
+  <div id="featured" class="featured"></div>
+  <div id="grid" class="grid"></div>
+</section>
+
+<section id="radio" class="section radio">
+  <div class="head">
+    <h2>WILCZE RADIO</h2>
+    <p>Wszystkie utwory zespołu, jeden po drugim, w pętli — 24/7.</p>
+  </div>
+  <div class="player">
+    <div class="player-art"><img id="rArt" src="assets/cover-1.jpg" alt=""></div>
+    <div class="player-main">
+      <div class="player-meta">
+        <span class="live">● NA ANTENIE</span>
+        <h3 id="rTitle">—</h3>
+        <p id="rDesc">Naciśnij play, aby uruchomić strumień.</p>
+      </div>
+      <div class="controls">
+        <button id="rPrev" aria-label="Poprzedni">⏮</button>
+        <button id="rPlay" class="play" aria-label="Odtwórz">▶</button>
+        <button id="rNext" aria-label="Następny">⏭</button>
+        <button id="rShuffle" class="tog" aria-label="Losowo">🔀</button>
+        <span class="loopinfo">🔁 pętla włączona</span>
+      </div>
+      <ol id="rList" class="playlist"></ol>
+    </div>
+  </div>
+  <div id="ytHost" class="yt-host"><div id="ytPlayer"></div></div>
+</section>
+
+<section id="zespol" class="section">
+  <div class="head"><h2>ZESPÓŁ</h2></div>
+  <div class="about">
+    <div class="about-txt">
+      <h3>Wojan</h3>
+      <p>Wojan to głos i pióro Czarnych Wilków Prawdy. Teksty rodzą się z obserwacji — z tego, co ludzie przemilczają. Muzyka jest ciężka, surowa i szczera: gitary, które gryzą, i refreny, które zostają.</p>
+      <p>Zespół gra materiał autorski, łącząc rockową energię z mroczną, wilczą estetyką. Nowe single publikowane są regularnie i od razu trafiają na tę stronę oraz do Wilczego Radia.</p>
+      <ul class="tags"><li>rock</li><li>alternatywa</li><li>teksty autorskie</li><li>Polska</li></ul>
+    </div>
+    <div class="about-img"><img src="assets/cover-3.jpg" alt="Czarne Wilki Prawdy"></div>
+  </div>
+</section>
+
+<section id="koncerty" class="section">
+  <div class="head"><h2>KONCERTY</h2></div>
+  <div id="gigs" class="gigs"></div>
+</section>
+
+<section id="kontakt" class="section contact">
+  <div class="head"><h2>KONTAKT</h2><p>Booking, media, współpraca.</p></div>
+  <div class="contact-box">
+    <a class="cbtn" href="mailto:kontakt@czarnewilkiprawdy.pl">kontakt@czarnewilkiprawdy.pl</a>
+    <div class="socials">
+      <a href="#" rel="noopener">YouTube</a>
+      <a href="#" rel="noopener">Spotify</a>
+      <a href="#" rel="noopener">Facebook</a>
+      <a href="#" rel="noopener">Instagram</a>
+      <a href="#" rel="noopener">TikTok</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© <span id="y"></span> Czarne Wilki Prawdy • Wojan — wszelkie prawa zastrzeżone.</p>
+  <p class="small">czarnewilkiprawdy.pl</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+{
+  "band": "Czarne Wilki Prawdy",
+  "artist": "Wojan",
+  "updated": "2026-09-06",
+  "tracks": [
+    {
+      "id": "wilcza-noc",
+      "title": "Wilcza Noc",
+      "year": 2026,
+      "type": "singiel",
+      "cover": "assets/cover-1.jpg",
+      "description": "Otwierający singiel — ciężkie gitary, wilczy zaśpiew, opowieść o nocy, która mówi prawdę.",
+      "source": "youtube",
+      "videoId": "dQw4w9WgXcQ",
+      "spotify": "",
+      "featured": true
+    },
+    {
+      "id": "prawda-w-dymie",
+      "title": "Prawda w Dymie",
+      "year": 2026,
+      "type": "singiel",
+      "cover": "assets/cover-2.jpg",
+      "description": "Wolniejszy, mroczny numer o tym, co zostaje, gdy opadnie kurz.",
+      "source": "youtube",
+      "videoId": "dQw4w9WgXcQ",
+      "spotify": "",
+      "featured": false
+    },
+    {
+      "id": "sfora",
+      "title": "Sfora",
+      "year": 2025,
+      "type": "utwór",
+      "cover": "assets/cover-3.jpg",
+      "description": "Hymn watahy. Riff, który nie odpuszcza.",
+      "source": "youtube",
+      "videoId": "dQw4w9WgXcQ",
+      "spotify": "",
+      "featured": false
+    }
+  ],
+  "concerts": [
+    { "date": "2026-10-18", "city": "Dąbrowa Górnicza", "venue": "Fabryka Pełna Życia", "ticket": "" },
+    { "date": "2026-11-07", "city": "Katowice", "venue": "Klub Królestwo", "ticket": "" }
+  ]
+}

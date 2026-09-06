@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://czarnewilkiprawdy.pl/sitemap.xml
